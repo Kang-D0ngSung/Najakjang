@@ -1,0 +1,26 @@
+{
+    "manifest_version" : 3,
+    "name" : "My Little JD",
+    "version" : "1.0",
+    "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "storage",
+        "webRequest"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts" : [
+        {
+            "matches" : ["<all_urls>"],
+            "js" : ["index.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+          "resources": ["img/tang.gif"],
+          "matches": ["<all_urls>"]
+        }
+    ]
+}
