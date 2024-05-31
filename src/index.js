@@ -8,8 +8,8 @@ const DancingKingJD = () => {
 
     let dancer = document.createElement('img');
     dancer.src = chrome.runtime.getURL('img/tang.gif');
-    dancer.style.width = '310px';
-    dancer.style.height = '420px';
+    dancer.style.width = '100px';
+    dancer.style.height = '112px';
 
     stage.appendChild(dancer);
 
